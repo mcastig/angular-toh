@@ -1,29 +1,35 @@
 /* HeroesComponent's private CSS styles */
 .heroes {
-  margin: 0 0 2em 0;
   list-style-type: none;
+  margin: 0 0 2em 0;
   padding: 0;
   width: 15em;
 
   li {
-    cursor: pointer;
-    position: relative;
-    left: 0;
     background-color: #EEE;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 1.6em;
     margin: .5em;
     padding: .3em 0;
-    height: 1.6em;
-    border-radius: 4px;
+    position: relative;
 
     &:hover {
       background-color: #DDD;
       color: #607D8B;
       left: .1em;
     }
+  }
 
-    &.selected:hover {
-      background-color: #BBD8DC !important;
-      color: #fff;
+  a {
+    color: #888;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    width: 250px;
+
+    &:hover {
+      color: #607D8B;
     }
   }
 
@@ -36,19 +42,11 @@
     height: 1.8em;
     line-height: 1em;
     left: -1px;
-    position: relative;
     margin-right: .8em;
+    min-width: 16px;
     padding: 0.8em 0.7em 0 0.7em;
-    top: -4px;
-  }
-
-  .selected {
-    background-color: #CFD8DC !important;
-    color: white;
-  }
-
-  .text {
     position: relative;
-    top: -3px;
+    text-align: right;
+    top: -4px;
   }
 }
